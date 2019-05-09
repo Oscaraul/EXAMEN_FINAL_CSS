@@ -1,0 +1,306 @@
+body {
+	background-color: #02010a;
+}
+
+#Contenido{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	animation: slide 1s;
+}
+
+header{
+	background-color:  #5b7989;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content:  space-between;
+  align-items: center;
+	border-radius: 10px 10px 0 0;
+}
+
+header nav h1 {
+	color: white;
+	text-shadow: 1px 2px 3px black;
+}
+
+header nav a{
+		color: white;
+		font-weight: bold;
+}
+
+.Subrayado_1{
+text-decoration: none;
+}
+
+.Subrayado_2{
+text-decoration: none;
+}
+
+.Subrayado_3{
+text-decoration: none;
+}
+
+#Arriba{
+background-color: #80c3a6;
+width: 100%;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+
+#Arriba img{
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 2px solid black;
+}
+
+#Abajo{
+	background-color: #d5c75f;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#Abajo_Paisaje{
+	background-color: #d5c75f;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#Abajo_Paisaje [class*=img_Pa] {
+	width: 30%;
+	}
+
+#Abajo_Paisaje [class*=img_Pa] [id*=PA_] {
+	width: 100%;
+	margin: 20px;
+}
+
+.img_Pa_1{
+	margin-right: 30px;
+}
+
+.img_Pa_2{
+	margin-right: 30px;
+}
+
+.img_Pa_4{
+	margin-right: 30px;
+}
+
+.img_Pa_5{
+	margin-right: 30px;
+}
+
+.img_Pa_1 img{
+	-webkit-filter: blur(5px);
+	filter:blur(5px);
+}
+
+.img_Pa_2 img{
+	-webkit-filter: grayscale(100%);
+	filter:grayscale(100%);
+}
+
+.img_Pa_3 img{
+	-webkit-filter: sepia(100%);
+	filter:sepia(100%);
+}
+
+.img_izq img, .img_der img{
+	width: 90%;
+}
+
+.img_Pa_4 img{
+	-webkit-filter: grayscale(100%);
+	filter:grayscale(100%);
+}
+
+.img_Pa_5 img{
+	-webkit-filter: brightness(100%);
+	filter:brightness(100%);
+}
+
+.img_Pa_6 img{
+	-webkit-filter: grayscale(100%);
+	filter:grayscale(100%);
+}
+
+.img_izq, .img_der{
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+.img_izq{
+	margin-right: -10px;
+	}
+
+.img_der{
+	margin-left: -10px;
+}
+
+.img_izq p{
+	font-size: 25px;
+	text-decoration: underline;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.img_der p{
+	font-size: 25px;
+	text-decoration: underline;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#IMG_IZQ{
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px 0 #82c3a6;
+	transform: rotate(0deg);
+	transition: transform 1s;
+}
+
+#IMG_IZQ:hover{
+	transform: rotate(10deg);
+}
+
+#IMG_DER{
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px 0 #82c3a6;
+	transform: translate(0px);
+	transition: transform 1s;
+}
+
+#IMG_DER:hover{
+	transform: translate(20px, -5px);
+}
+
+
+footer{
+	background-color: #C6d5c5;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border-radius: 0 0 10px 10px;
+}
+
+.Pie{
+margin-left: 6%;
+font-weight: bold;
+}
+
+.pie,p{
+	font-size: 18px;
+	position: relative;
+	top: -5px;
+}
+
+.Sub_logos{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	bottom: -3px;}
+
+h1,p,a{
+font-family: 'Dancing Script', cursive;
+}
+
+@keyframes slide {
+	0%	 {margin-top: 160%;}
+	60%	 {margin-top: -5%;}
+	100% {margin-top: 0%;}
+}
+
+@media (max-width:900px){
+	#Contenido{
+		width: 100%;
+	}
+
+	header{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 25px;
+		padding-top: 0px;
+	}
+
+	#Titulo{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#Enlaces{
+		font-size: 25px;
+		word-spacing: 20px;
+	}
+
+	#Enlaces_Paisaje{
+		font-size: 25px;
+		word-spacing: 20px;
+	}
+
+#Enlaces_Retrato{
+		font-size: 25px;
+		word-spacing: 20px;
+	}
+
+	#Arriba img{
+		margin-left: 40px;
+		width: 82%;
+		height: 250px;
+	}
+
+	#Abajo{
+		display: flex;
+		flex-direction: column;
+		padding-top: 30px;
+	}
+
+	.img_izq{
+		margin-left: auto;
+		margin-right: auto;
+		margin: 2% 3% 0 5%;
+	}
+
+	.img_der{
+		margin-left: auto;
+		margin-right: auto;
+		margin: 2% 3% 0 5%;
+	}
+
+#Abajo_Paisaje{
+	display: flex;
+	flex-direction: column;
+}
+
+#Abajo_Paisaje [class*=img_Pa] {
+	width: 100%;
+	}
+
+#Abajo_Paisaje [class*=img_Pa] [id*=PA_] {
+	width: 85%;
+	margin-left: 37px;
+	height: 300%
+}
+
+footer{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+}
